@@ -1,0 +1,256 @@
+canvas {
+    background-image: url("bg-stars.png");
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.wrapper {
+    position: absolute;
+    width:80%;
+    margin-left: 10%;
+    min-height: 100%;
+    padding: 0px 20px 10px 10px;
+    color: #eeeeee;
+    font-family: Droid Sans, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    top: 0;
+    bottom: 0;
+    display: block;
+    overflow: auto;
+}
+
+
+body {
+    text-align: center;
+    color: #000000;
+    background: #f1f1f1;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+h1 {
+    color: red;
+}
+
+.question {
+    text-align: center;
+    font-size:20px;
+}
+
+.quizSection {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+    grid-row-gap: 15px;
+    /* display: block; */
+}
+
+
+button {
+    padding: 20px;
+}
+
+
+.replyToTheAnswer {
+    color: #5352ed;
+    font-size: 30px;
+    margin-top: 120px;
+}
+
+.notCorrectAnswer {
+    color: #e74c3c;
+    font-size: 30px;
+    margin-top: 120px;
+}
+
+.alreadyAnsweredNotification {
+    color: #e74c3c;
+    font-size: 30px;
+}
+.showingPoints {
+    font-size: 30px;
+}
+
+.pagination {
+    display: inline-block;
+    position: relative;
+    right: 5px;
+    top: 50px;
+
+}
+  
+.pagination button {
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border:none;
+    outline: none;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.active {
+    background-color: #e74c3c;;
+    color: white;
+}
+
+
+
+.pagination button {
+    border-right: none; /* Prevent double borders */
+  }
+  
+
+  .pagination:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.timing {
+    position: relative;
+    top: 50px;
+    left:0;
+    top: 55px;
+    font-size: 40px;
+    color: #000000;
+}
+
+.previousAndNextButtonGroup {
+    position: relative;
+    top: 50px;
+}
+
+.previous , .next , .nextStep {
+    position: relative;
+    background: #5352ed;
+    color: #f1f1f1;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.changeThePosition {
+    position: relative;
+}
+
+.previous {
+    right: 50px;
+}
+
+.next {
+    left: 50px;
+}
+
+
+.theNumberOfTheQuestionInTheFeedBack , .theTextOfTheQuestionInTheFeedBack
+{
+    color: #000000;
+}
+
+.previous:hover , .next:hover , .nextStep:hover {
+    color: #5352ed;
+    background: #f1f1f1;
+    outline: #5352ed 2px solid;
+}
+
+
+.answeringQuestionNumberOfOnWhichQuestinTheUserIs {
+    font-size: 25px;
+    color: #5352ed;
+  
+}
+
+.showingPoints  , .showingTime , .showingPercentageSuccess {
+    font-size: 25px;
+    color: #5352ed
+}
+
+.showingPointsResult , .showingPointsTimeSpent , .showingPointsPercentageSuccess {
+    color: black;
+}
+
+.correctAnswer {
+    background: #5352ed;
+}
+
+.notCorrectAndNotWrongAnswer {
+    background: #f1f1f1;
+    color: #000000;
+    opacity: 0.7;
+    /* background: rgba(0, 0, 0, 0.3); */
+}
+
+.wrongAnswer {
+    background: #e74c3c;
+}
+
+.forwardButton {
+    background: #5352ed;
+    font-size: 16px;
+    color: #ffffff;
+    transition: all 0.7s;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.notAnswered {
+    background: #5352ed;
+
+}
+
+
+.forwardButton:hover {
+    background: #ffffff; 
+    color:  #5352ed;
+    outline: #5352ed 2px solid;
+}
+
+.itIsDisabled {
+    transition: all 0.5s;
+    background-color: #e74c3c;
+    font-weight: bold;
+}
+
+.itIsDisabled:hover {
+    background: #ffffff; 
+    color:  #e74c3c;
+    outline: #e74c3c 2px solid;
+}
+
+
+.quizFeedBackDiv {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+    position: relative;
+}
+
+.quizFeedBackDiv .feedback {
+    position: absolute;
+    right: 3px;
+}
+
+.quizFeedBackDiv div {
+    padding: 10px;
+}
+
+.whenTtereIsJustCorrectAnswer {
+    background: #2ed573; 
+}
+
+
+
+
+
+  
